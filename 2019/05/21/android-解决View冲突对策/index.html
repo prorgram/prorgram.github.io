@@ -5,15 +5,21 @@
   
 
   
-  <title>Unicorn&#39;s Blog</title>
+  <title>android 解决View冲突对策 | Unicorn&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Unicorn&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="今天来简单介绍一下android view冲突解决机制。 首先我们需要把view的冲突分为两类： 即在什么情况下才会出现事件冲突  1.在外group是横向的，内置一个listView竖向的。 2.在外group是竖向的，内置一个ListView也是竖向的。  如图所示：  但是一个Viewpager里内置一个ListView，那么为什么没有出现冲突呢，那是因为在Viewpager里已经写过相关的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="android 解决View冲突对策">
+<meta property="og:url" content="http://yoursite.com/2019/05/21/android-解决View冲突对策/index.html">
 <meta property="og:site_name" content="Unicorn&#39;s Blog">
+<meta property="og:description" content="今天来简单介绍一下android view冲突解决机制。 首先我们需要把view的冲突分为两类： 即在什么情况下才会出现事件冲突  1.在外group是横向的，内置一个listView竖向的。 2.在外group是竖向的，内置一个ListView也是竖向的。  如图所示：  但是一个Viewpager里内置一个ListView，那么为什么没有出现冲突呢，那是因为在Viewpager里已经写过相关的">
 <meta property="og:locale" content="chinese">
+<meta property="og:image" content="http://yoursite.com/images/dir.png">
+<meta property="og:updated_time" content="2019-05-21T02:25:39.264Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Unicorn&#39;s Blog">
+<meta name="twitter:title" content="android 解决View冲突对策">
+<meta name="twitter:description" content="今天来简单介绍一下android view冲突解决机制。 首先我们需要把view的冲突分为两类： 即在什么情况下才会出现事件冲突  1.在外group是横向的，内置一个listView竖向的。 2.在外group是竖向的，内置一个ListView也是竖向的。  如图所示：  但是一个Viewpager里内置一个ListView，那么为什么没有出现冲突呢，那是因为在Viewpager里已经写过相关的">
+<meta name="twitter:image" content="http://yoursite.com/images/dir.png">
   
     <link rel="alternate" href="/atom.xml" title="Unicorn&#39;s Blog" type="application/atom+xml">
   
@@ -60,9 +66,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-android-解决View冲突对策" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-android-解决View冲突对策" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/05/21/android-解决View冲突对策/" class="article-date">
   <time datetime="2019-05-21T02:25:21.000Z" itemprop="datePublished">2019-05-21</time>
@@ -75,8 +79,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/05/21/android-解决View冲突对策/">android 解决View冲突对策</a>
+    <h1 class="article-title" itemprop="name">
+      android 解决View冲突对策
     </h1>
   
 
@@ -132,101 +136,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-hello-Android-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/05/20/hello-Android-world/" class="article-date">
-  <time datetime="2019-05-20T05:53:47.000Z" itemprop="datePublished">2019-05-20</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/05/20/hello-Android-world/">hello Android world</a>
-    </h1>
+    <a href="/2019/05/20/hello-Android-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">hello Android world</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2>hello android world</h2>
-<p><strong>first time write blog in  hexo</strong></p>
-<p><strong>time: 2019 05 20</strong></p>
-<p><strong>author: unicorn</strong></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/20/hello-Android-world/" data-id="cjvx6fn4a0001gsutyqk2mzj4" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/05/20/hello-world/" class="article-date">
-  <time datetime="2019-05-20T05:04:44.646Z" itemprop="datePublished">2019-05-20</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/05/20/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2>Quick Start</h2>
-<h3>Create a new post</h3>
-<p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure></p>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3>Run server</h3>
-<p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></p>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3>Generate static files</h3>
-<p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></p>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3>Deploy to remote sites</h3>
-<p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></p>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/20/hello-world/" data-id="cjvx6fn4d0002gsutd485busn" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
